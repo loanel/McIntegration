@@ -25,7 +25,7 @@ public class IntegrationController {
     }
 
     @RequestMapping("/rintegrate")
-    public double rIntegration(@RequestParam(value="amount") Double amount, @RequestParam(value="nodes") Integer nodes, @RequestParam(value="nodes") Integer nodeNumber){
+    public double rIntegration(@RequestParam(value="amount") Double amount, @RequestParam(value="nodes") Integer nodes, @RequestParam(value="nodeNumber") Integer nodeNumber){
         double nodeAmount = amount/nodes;
         double start = nodeNumber;
         double end = start + 1;
