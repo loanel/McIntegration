@@ -36,4 +36,9 @@ public class IntegrationController {
         }
         return integralValue;
     }
+
+    @RequestMapping("/test")
+    public String test(){
+        return "Test Message";
+    }
 }
